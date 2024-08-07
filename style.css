@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Russo One', sans-serif;
+    box-sizing: border-box;
+
+}
+html{
+    font-size: 25px;
+}   
+h1{
+    font-size: 2rem;
+    line-height: 2rem;
+
+}
+h2{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+h3{
+    font-size: 1rem;
+    line-height: 1rem;
+}
+:root{
+    --bg__color:#222222;
+    --container_color:#000000;
+    --morales_color:#403E93;
+    --gwen_color:#EC9DF9;
+    --parker_color1:#FF2D2D;
+    --parker_color2: #093FFF;
+    --penny_color:#F21198;
+    --black_accenrt:#222222;
+    --whiet_accent:#FFFFFF;
+    --pig_color:#13A39A;
+}
+body{
+    background:var(--bg__color);
+}
+.site__container{
+    background: var(--container_color);
+    max-width:1000px;
+    margin:auto;
+
+}
+header{
+    background: url(img/header.png) center/cover no-repeat;
+    width: 100%;
+    height: 693px;
+    display: flex;
+    align-items: flex-end;
+}
+.headet__title{
+    background:var(--container_color);
+    padding: 60px;
+    color: var(--whiet_accent);
+    width: 50%;
+    text-transform: uppercase;
+    text-align: center;
+}
+.main_morales{
+    background: url(img/mails.png) center/cover no-repeat ;
+}
+.main_gwen{
+    background: url(img/gwen.png) center/cover no-repeat;
+}
+.main_parker{
+    background: url(img/parker.png) center/cover no-repeat;
+}
+.main_pig{
+    background: url(img/pig.png) center/cover no-repeat;
+}
+.main_noir{
+    background: url(img/nuar.png) center/cover no-repeat;
+}
+.main_penny{
+    background: url(img/penny.png) center/cover no-repeat;
+}
+.main_robot{
+    background: url(img/robo.png) center/cover no-repeat;
+}
+.main_trio{
+    background: url(img/allspace.png ) center/cover no-repeat;
+}
+.main_all-team{
+    background: url(img/allman.png ) center/cover no-repeat;
+}
+.main_versus{
+    background: url(img/winking.png) center/cover no-repeat;
+}
+.main_kingpin{
+    background: url(img/kingpin.png) center/cover no-repeat;
+}
+.main_free-fall{
+    background: url(img/spiderofadown.png) center/cover no-repeat;
+
+}
+main{
+    display: grid;
+    grid-template-rows: repeat(11, 218px);  
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    grid-template-areas: "morales morales gwen gwen"
+    "parker parker gwen gwen"
+    " parker parker pig . "
+    " noir penny penny robot"
+    " noir trio trio trio"
+    " allteam allteam allteam allteam "
+    " allteam allteam allteam allteam "
+    " . vs vs vs"
+    " kingpin kingpin kingpin freefall"
+    "kingpin kingpin kingpin freefall"
+    "kingpin kingpin kingpin .";
+
+}
+.main__text{
+
+}
+.main_morales{
+    grid-area: morales;
+}
+.main_gwen{
+    grid-area: gwen;
+}
+.main_parker{
+    grid-area:parker;
+}
+.main_pig{
+    grid-area: pig;
+}
+.main_noir{
+    grid-area: noir;
+}
+.main_penny{
+    grid-area: penny;
+}
+.main_robot{
+    grid-area: robot;
+}
+.main_trio{
+    grid-area: trio;
+}
+.main_all-team{
+    grid-area: allteam;
+}
+.main_versus{
+    grid-area: vs;
+}
+.main_kingpin{
+    grid-area: kingpin  ;
+}
+.main_free-fall{
+    grid-area: freefall;
+}
+.main_morales-text{
+    color: #403E93;
+    text-shadow: 5px 5px 0px #000;
+    font-weight: 400;
+    padding: 20px;
+}
+.main_gwen-text{
+    color: #F8F8F8;
+    text-shadow: -5px 5px 0px #EC9DF9;
+    padding: 5px 20px;
+    text-align: right;
+}
+.main_parker-text{
+    color: #FF2D2D;
+    text-shadow: 4px 4px 0px #093FFF;
+    width: 190px;
+    padding:30px;
+}
+.main_parker{
+    display: flex;
+    align-items: end;
+}
+.main_pig-text{
+    color: #FFF;
+    text-align: right;
+    text-shadow: 5px 5px 0px #13A39A;
+    width: 142px;
+    font-size: 25px;
+    padding:8px;
+}
+.main_pig{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.main_noir-text{
+    color: #000;
+    text-shadow: -5px 5px 0px #FFF, 5px -4px 0px #FFF;
+    line-height: normal;
+    writing-mode: vertical-lr;
+    padding: 90px 17px;
+}
+.main_penny-text{
+    color: #F21198;
+    text-align: center;
+    text-shadow: 5px 5px 0px #FFF;
+    padding: 16px 28px;
+}
+.main_penny{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.main_robot-text{
+    color: #FFF;
+    text-align: right;
+    text-shadow: 5px 4px 0px #F21198;
+    font-size: 25px;
+    width: 193px;
+    padding: 24px;
+    line-height: normal;
+}
+.main_robot{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.main_trio-text{
+    color: #FFF;
+    text-align: right;
+    padding: 21px 29px;
+}
+.main_trio{
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+.main_versus-text{
+    color: #FFF;
+    text-align: right;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 15px 17px;
+
+}
+.main_all-team-text{
+    background: rgba(0, 0, 0, 0.84);
+    backdrop-filter: blur(10px);
+    width: 50%;
+    height: 100%;
+    color: #FFF;
+    padding: 135px 37px;
+}
+
+.main_versus{
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
